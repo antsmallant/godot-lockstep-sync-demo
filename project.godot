@@ -21,6 +21,7 @@ config/main_scene="res://demo.tscn"
 
 [display]
 
+window/size/width=800
 window/size/resizable=false
 
 [logging]
