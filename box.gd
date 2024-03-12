@@ -38,6 +38,8 @@ func _integrate_forces(s):
 		s.set_angular_velocity(state[3])
 
 func _input_event(_viewport, event, _shape_idx):
+	# we need to know exactly which box is dragged,
+	# so the event need to be captured in this `_input_event` function.
 	if (event is InputEventMouseButton and event.pressed):
 		dragging = true
 		start_drag()
